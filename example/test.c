@@ -1,10 +1,14 @@
-void any(int a, int b)
+int any(int a, int b)
 {
-    int a = 0;
-    int size = scanf("%d", &a);
-    int *test1 = (int *)malloc(sizeof(int) * size);
-    test1[0] = 10;
-    printf("%d \n", test1[0]);
+    if(a>b){
+        return -1;
+    }
+    else if(a==b){
+        return 0;
+    }
+    else{
+        return 1;
+    }
 }
 
 int main(void)

@@ -22,7 +22,7 @@ int main(void)
 
 	Batter *Batt_array = (Batter*)malloc(sizeof(Batter) * len);
 
-	//json_print(json);
+	json_print(json);
 	for(int i = 0; i < len; i++){
 		json_value ob = json_get(json3,i); // i번째 오브젝트 가져오기
 		char *id = json_get_string(ob, "id"); // 오브젝트 스트링으로 저장
